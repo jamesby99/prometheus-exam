@@ -1,0 +1,22 @@
+global:
+  smtp_smarthost: ''
+  smtp_from: ''
+  smtp_auth_username: ''
+  smtp_auth_password: ''
+  smtp_require_tls: false
+
+templates:
+- ''
+
+route:
+  repeat_interval: 1h
+  receiver: operations-team
+
+receivers:
+- name: ''
+  email_configs:
+  - to: ''
+  slack_configs:
+  - api_url:  
+    channel: ''
+    send_resolved: true
